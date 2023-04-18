@@ -4,7 +4,85 @@
 
 <div class="row" id="products_page">
     <div class="col-md-12">
-        <h3>Products</h3>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<title>Navigation Bar</title>
+	<style>
+		/* Style for navigation bar */
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+		}
+		.navbar ul {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.navbar ul li {
+			margin-right: 20px;
+		}
+		.navbar ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+            font-family: "Roboto";
+		}
+		.navbar-logo {
+			margin: 0;
+			text-align: center;
+			flex-grow: 1;
+		}
+		.navbar-logo img {
+			height: 50px;
+		}
+		.navbar-search {
+			display: flex;
+			align-items: center;
+		}
+		.navbar-search input[type="text"] {
+			padding: 5px;
+			border: none;
+			border-radius: 3px;
+			margin-right: 10px;
+		}
+		.navbar-search input[type="submit"] {
+			padding: 5px 10px;
+			background-color: #fff;
+			border: none;
+			border-radius: 3px;
+			color: #333;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="#">SHOP</a></li>
+			<li><a href="ourBrand.html">OUR BRAND</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+		</ul>
+		<div class="navbar-logo">
+			<img src="lykoslogo.png" alt="Logo">
+		</div>
+		<div class="navbar-search">
+			<form>
+				<input type="text" placeholder="Search...">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</nav>
+</body>
+</html>
         <hr>
         <div class="row">
             <form action="/checkout" method="post">
